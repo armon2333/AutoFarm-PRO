@@ -1,0 +1,5 @@
+game.DescendantAdded:Connect(function(des)
+    if des:IsA("LocalScript") and des.Parent = nil then
+        des:Destroy()
+    end
+end)
